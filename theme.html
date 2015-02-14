@@ -1,0 +1,979 @@
+<html>
+
+<head>
+<!--     <link rel="stylesheet" media="screen" href="urban.css"> -->
+
+    
+
+<!-- 
+    <script type="text/javascript" src="http://codysherman.tumblr.com/tools/infinite-scrolling/code"></script>
+    
+-->
+
+
+
+
+
+
+    <style type="text/css">
+
+
+
+body {
+    font-family: "Ubuntu", Ubuntu, sans-serif;
+
+}
+
+iframe#tumblr_controls {right:2px !important; position: fixed !important}
+
+
+.tumblrbuttons {
+   /* position: absolute;
+    float: right;
+	margin: 10px;
+	text-align: left;*/
+    
+    
+    
+    position: absolute;
+    float: right;
+	right: 10px;
+	text-align: left;
+	top: 10px;
+	font-size: 80%;
+	max-width:30%;
+    
+    }
+
+.invisible {
+    text-decoration: none;
+    color: black;
+}
+
+.commentz {
+    left: 200px;
+    /*//max-width: 1384px;    */
+    max-width:1384px;
+    margin-left:20px;
+    margin-right:20px;
+    padding-bottom:20px;
+    text-align:justify;
+    }
+ .commentz p, span{
+    width: 78%;
+    /*max-width: 1024px;*/
+    
+    
+}
+    
+.commentz img{
+    width:100%;
+
+}
+    
+.numberofcomments {
+    font-size: 85%;
+    }
+
+.disqus_thread2 {
+     position: relative;
+     padding: 20px;
+    left: 200px;
+
+/* 	width: 800;*/
+	background-color: #F2F2F2;
+/*	padding-left: 50px;*/
+/*	top:10px;*/
+	margin-top: 10px;
+    }
+
+.sidebar {
+     position: fixed;
+/*    width: 20%;*/
+	width: 200px;
+/*	height: 1000;*/
+	background-color: #FFFFFF;
+
+	text-align: center;
+/*	margin-top: 50px;*/
+	font-size: 12px;
+	top:160px;
+	height: 100%;
+
+}
+
+.sidecontent {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -200px;
+    /*//margin: 0 auto -380px;*/
+	margin-left: auto;
+	margin-right: auto;
+    
+    
+}
+
+.sidetitle {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    
+	writing-mode: horizontal-tb;
+    /*font-family: "Quantico", Quantico, sans-serif;*/
+	margin-top: 190px;
+	/*//height: 100%;*/
+	width: 250%;
+	margin-left: -190px;
+	/*//margin-right: 68px;*/
+	font-size: 40px; 
+	font-style: bold;
+	opacity: 0.9;
+
+
+
+}
+
+.dreamscapes a:link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.dreamscapes a:visited {
+    color: #000000;
+}
+.dreamscapes a:hover {
+    color: #FF00FF;
+    text-decoration: underline;
+}
+
+.dreamscapes {
+	/*-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+	*/
+	font-family: "Ubuntu", sans-serif;
+	writing-mode: lr-tb;
+	
+	text-align: left;
+	margin-left: 75px;
+	/*//font-weight: 100;*/
+	font-size: 14px;
+	margin-top: -200px;
+	opacity: 0.8;
+    
+    
+}
+
+.bottom {
+    position:relative;
+    padding-bottom: 1px;
+    /*//padding-top: auto;*/
+    margin-top:1px;
+    /*min-width:1025px;*/
+    padding-left:10%;
+    
+    margin-left:12%;
+    margin-right:auto;
+    /*//width:70%;*/
+    width:900px;
+    height:5%;
+    max-width: 1384px;
+    
+    top:20px;
+    float:left;
+    
+}
+
+
+.bottomText {
+    
+   /*//padding-left:5%;*/
+    font-size:75%;
+    left:200px;
+    width:90%;
+}
+
+.footer {
+    padding-right:50%;
+    padding-left:50%;
+    margin-bottom:50px;
+    margin-right:100px;
+    float: right;
+    
+    
+}
+.centered {
+    
+    /*//margin-left:auto;*/
+    /*//margin-right:auto;*/
+    margin-top:5px;
+   padding-left:25%;
+    /*//left:200px;*/
+    width:100px;
+    
+}
+
+.socialicons {
+/*	position: fixed;*/
+/*	width: 200;*/
+	max-width:20%;
+/*	height: 50;*/
+
+	top-margin:280px;
+	height: 360px;
+
+}
+
+.topbarZ {
+	position: relative;
+
+	left: 200px;
+	/*//top: 50px;*/
+	margin-top:2.5%;
+	/*//margin-bottom:10px;*/
+	width: 80%;
+    max-width: 1384px;
+    min-width: 1025px; 
+	
+	height: 150px;
+/*	padding-left: 50px;*/
+/*	padding-right: 50px;*/
+
+/*	margin-bottom: 10px;*/
+	background-color: #8C8C8C;
+
+}
+
+.profileAlec {
+    
+	/*//position: relative;*/
+    left:200px;
+	width: 70%;
+	min-width: 500px;
+	max-width: 1000px;
+	/*//float: left;*/
+	/*//vertical-align: middle;*/
+    
+}
+
+.profilepic {
+	float: right;
+/*	min-width: 20%;
+	max-width: 40%;*/
+/*	width: 20%;*/
+/*	min-height: 10%;
+    display: table-cell;
+	vertical-align: middle;*/
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right:20px;
+	/*//margin-bottom: 5px;*/
+
+}
+
+
+.postcontent {
+	position: relative;
+    left: 200px;
+	top: 10px;
+/* 	width: 800;*/
+	width:80%;
+	min-width: 1025px;
+    max-width: 1384px;
+	background-color: #F2F2F2;
+/*	padding-left: 50px;*/
+/*	top:10px;*/
+    margin-top: 15px;
+	margin-bottom: 50px;
+
+}
+
+.textPost {
+	padding-left: 20px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:20px;
+    /*//max-width:1024px;*/
+	max-width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+    text-align:justify;
+	font-size: 80%;
+}
+.textPost img{
+    padding-left:25%;
+    padding-right:25%;
+    width:50%;
+}
+
+
+.imagecontent {
+	padding-left: 20px;
+	padding-top:20px;
+	padding-bottom:20px;
+    max-width:1024px;
+	width: 75%;
+	
+}
+
+.videoContent {
+    position:relative;
+	/*//padding-left: 20%;*/
+	padding-top:20px;
+	/*//padding-bottom:5px;*/
+	padding-bottom:45%;
+    max-width:1024px;
+    padding-right:29%;
+	width: 46%;
+	margin-left:20px;
+
+}
+
+.videoContent iframe,
+.videoContent object,
+.videoContent embed {
+    
+    position: absolute;
+	width: 100%;
+	height:100%;
+	
+    max-width:1024px;
+
+}
+
+.caption {
+
+}
+
+.captionSet {
+    
+    /* OLD CAPTIONSET BEFORE DIV SPAN INCIDENT
+	position: absolute;
+	float: right;
+	margin-left: 15px;
+	margin-right:10px;
+	text-align: justify;
+	top: 100px;
+	font-size: 80%;
+	max-width:30%;
+	*/
+	position: absolute;
+	float: right;
+	margin-left: 10px;
+	margin-right:15px;
+	top: 200px;
+	margin-top:auto;
+	/*//bottom:50px;*/
+	font-size: 85%;
+	max-width:30%;
+	min-width:10%;
+	
+	/*//right:-200px;*/
+ /*   //left: 600px;*/
+    left:77%;
+    text-align: justify;
+    /*//padding-left:5px;*/
+}
+
+
+.captionVideo {
+	position: absolute;
+	float: right;
+	margin-left: 10px;
+	margin-right:15px;
+	/*//top: 100px;*/
+	margin-top:auto;
+	bottom:100px;
+	font-size: 85%;
+	max-width:30%;
+	min-width:10%;
+	
+	/*//right:-200px;*/
+ /*   //left: 600px;*/
+    left:77%;
+    text-align: justify;
+    /*//padding-left:5px;*/
+}
+
+.navigation {
+	margin-left: 200px;
+	text-align: center;
+	float: right;
+	width: 200px;
+
+/*	position: absolute;
+	left: 95%;
+	top: 50px;
+	text-align: center;
+*/
+
+
+}
+
+
+.snap {
+/*	position: relative;
+	float: left;
+	left: 200;
+	top: 100;
+	width: 900;
+	background-color: #F2F2F2;
+	padding-left: 50px;
+	margin-top: 10px;*/
+}
+
+a:link {
+    color: #136680;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #FF00FF;
+    text-decoration: underline;
+}
+
+
+#allPosts {
+    display:block;    
+
+}
+
+#landing {
+    /* old triangular landing
+    display:none;
+	position: relative;
+
+	left: 200px;
+	width: 70%;
+	height:30%;
+    max-width: 1384px;
+    min-width: 1025px;
+    
+    */
+    
+    display:none;
+	position: relative;
+	float:left;
+
+	left: 200px;
+	padding-left:10%;
+	padding-right:10%;
+	top:30px;
+	padding-bottom:55px;
+}
+#photoLanding{
+    
+    display:none;
+	position: relative;
+	float:left;
+
+	left: 200px;
+	padding-left:10%;
+	padding-right:10%;
+	top:30px;
+	padding-bottom:55px;
+	
+
+}
+.land{
+    
+    display:none;
+	position: relative;
+	float:left;
+
+	left: 200px;
+	padding-left:10%;
+	padding-right:10%;
+    
+}
+
+.navPanel{
+    
+	padding-left: 5%;
+    left:200px;
+    width:90%;
+    
+}
+
+.photo-set {
+    display: none;
+}
+
+.photo-set:first-child {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+.show {
+    display: block;
+    
+}
+
+</style>
+
+<script type="text/javascript">
+
+
+
+</script>
+
+	<title>alec mcclure</title>
+
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500, 600' rel='stylesheet' type='text/css'> 
+
+   
+
+</head>
+
+
+
+
+<body>
+
+    <iframe scrolling="no" frameborder="0" id="tumblr_controls" src="http://assets.tumblr.com/iframe.html?10&src=http%3A%2F%2F{Title}.tumblr.com%2F{block:PermalinkPage}post%2f{PostID}{/block:PermalinkPage}{block:IndexPage}page%2F{CurrentPage}{/block:IndexPage}&amp;{block:PermalinkPage}pid={PostID}{/block:PermalinkPage}&amp;rk=bgGiB47i&amp;lang=en_US&amp;name={Title}" style=
+    "position: fixed;
+    z-index:-1;
+    top:0px;
+    right:0px;
+    border:0px;
+    background-color:transparent;
+    overflow:hidden;
+    width: 1px;
+    height: 1px;"></iframe>
+
+	<div class="sidebar">
+	
+	
+		<div class="sidecontent">
+			<p class="sidetitle"></p>
+			<div class="dreamscapes">
+			 <a href="#" onclick="swap('list');return false;">works</a>
+			 <br>
+			 <div id="list" style="display:none;">
+		    	 &nbsp;&nbsp;<a href="http://alecmcclure.com/tagged/artdesign">art&design</a>
+		    	 <br>
+		    	 &nbsp;&nbsp;<a href="#" onclick="swap('photoList');return false;">photo</a>
+		    	 <br>
+		    	 
+    		    	 <div id="photoList" style="display:none;font-size:90%;">
+    		    	 &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://alecmcclure.com/tagged/structural">structural</a>
+    		    	 <br>
+    		    	 &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://alecmcclure.com/tagged/people">people</a>
+    		    	 <br>
+    		    	 &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://alecmcclure.com/tagged/photojournalism">photojournalism</a>
+    		    	 <br>
+    		    	<!-- &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://alecmcclure.com/tagged/commercial">commercial</a>
+    		    	 <br> -->
+    		    	 &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://alecmcclure.com/tagged/concert">concert</a>
+    		    	 <br>
+    		    	 <br>
+    		    	 </div>
+		    	 
+		    	 
+		    	 &nbsp;&nbsp;<a href="http://alecmcclure.com/tagged/sketches">sketches</a>
+		    	 <br>
+		    </div>
+		    <br>
+			<a target = "_blank" href="http://www.sabotai.com">blog</a><br><br>
+			<a href="http://alecmcclure.com/tagged/about">about</a><br><br>
+
+			</b></div>
+			
+		</div>
+			
+			
+			<div class="sociallinks">
+				<a href="https://github.com/sabotai"><img src="https://farm4.staticflickr.com/3856/14982152551_26c0ecf7d4_s.jpg" width=30></a>
+				<a href="https://www.tumblr.com/follow/alecmcclure"><img src="https://farm4.staticflickr.com/3860/14962069076_762e946bcb_o.png" width=30></a>
+				<a href="http://www.twitter.com/SubjectiveIdeal"><img src="https://farm4.staticflickr.com/3883/14985063185_6dc25eb0d7_o.png" width=30></a>
+				<a href="http://www.flickr.com/sabotai"><img src="https://farm4.staticflickr.com/3854/14962069086_187c057f23_o.png" width=30></a>
+				    
+			</div>
+    </div>
+
+
+	{block:IndexPage}
+	<div class="topbarZ">
+		<p class="profileAlec"><a href="http://alecmcclure.com">
+		<img src="https://farm8.staticflickr.com/7372/16432932315_ab678c3dc8_o.png"></p></a>
+	</div><br>
+	
+	
+	{/block:IndexPage}
+	{block:Permalink}
+	<div class="topbarZ">
+		<p class="profileAlec"><a href="http://alecmcclure.com">
+		<img src="https://farm8.staticflickr.com/7372/16432932315_ab678c3dc8_o.png"></p></a>
+	</div><br>
+	{/block:Permalink}
+<!--
+	
+	<map name="navMap" id="navMap">
+        <area class="shapes" shape="poly" coords="310,0,1140,0,723,716"
+      href="http://alecmcclure.com/tagged/structural"
+      alt="Photography"/>
+        <area class="shapes" shape="poly" coords="50,819,415,241,720,819"
+      href="http://alecmcclure.com/tagged/artdesign"
+      alt="Art"/>
+        <area class="shapes" shape="poly" coords="714,819,1047,241,1384,819"
+      href="http://alecmcclure.com/tagged/artdesign"
+      alt="Design"/>
+    </map>
+	
+<div id = "landing">
+    <div class="navPanel">
+        <img  src = "https://farm4.staticflickr.com/3893/14996021135_0abc53506d_o.png"  usemap="#navMap" class = "navPanel" id = "imagine">
+    </div>
+</div>
+-->
+
+<div id = "landing">
+    <a href="http://alecmcclure.com/tagged/artdesign"><img src="https://farm6.staticflickr.com/5564/15087041082_ae15595b38_o.png" 
+                                                            onmouseover="this.src='https://farm6.staticflickr.com/5571/14900834337_74ef0f04d3_o.png'" 
+                                                            onmouseout="this.src='https://farm6.staticflickr.com/5564/15087041082_ae15595b38_o.png'"></a>&nbsp;&nbsp;
+    <a href="http://alecmcclure.com/tagged/photonav"><img src="https://farm4.staticflickr.com/3894/15064400136_fe47c251e9_o.png"
+                                                            onmouseover="this.src='https://farm4.staticflickr.com/3876/15064400036_828c6a9dfe_o.png'"
+                                                            onmouseout="this.src='https://farm4.staticflickr.com/3894/15064400136_fe47c251e9_o.png'"></a>&nbsp;&nbsp;
+    <a href="http://alecmcclure.com/tagged/sketches"><img src="https://farm6.staticflickr.com/5558/14900712699_9fdc5dcc60_o.png"
+                                                            onmouseover="this.src='https://farm6.staticflickr.com/5561/15087041272_5158cd297a_o.png'"
+                                                            onmouseout="this.src='https://farm6.staticflickr.com/5558/14900712699_9fdc5dcc60_o.png'"></a>&nbsp;&nbsp;<br>
+</div>
+
+<div id = "photoLanding">
+    <a href="http://alecmcclure.com/tagged/structural"><img src="https://farm4.staticflickr.com/3838/15087400075_238caf6762_o.png" 
+                                                            onmouseover="this.src='https://farm6.staticflickr.com/5557/14900820288_f4da83714c_o.png'" 
+                                                            onmouseout="this.src='https://farm4.staticflickr.com/3838/15087400075_238caf6762_o.png'"></a>&nbsp;&nbsp;
+                                                            
+    <a href="http://alecmcclure.com/tagged/people"><img src="https://farm4.staticflickr.com/3841/14900820948_f98dfd450d_o.png" 
+                                                            onmouseover="this.src='https://farm6.staticflickr.com/5557/14900835127_89788a7790_o.png'" 
+                                                            onmouseout="this.src='https://farm4.staticflickr.com/3841/14900820948_f98dfd450d_o.png'"></a>&nbsp;&nbsp;
+                                                            
+    <a href="http://alecmcclure.com/tagged/photojournalism"><img src="https://farm4.staticflickr.com/3853/14900713079_8c3bfb733c_o.png" 
+                                                            onmouseover="this.src='https://farm6.staticflickr.com/5594/14900765290_c02e6b3b2f_o.png'" 
+                                                            onmouseout="this.src='https://farm4.staticflickr.com/3853/14900713079_8c3bfb733c_o.png'"></a>&nbsp;&nbsp;
+                                                            
+    <a href="http://alecmcclure.com/tagged/concert"><img src="https://farm4.staticflickr.com/3881/14900764590_04d02aa797_o.png" 
+                                                            onmouseover="this.src='https://farm4.staticflickr.com/3888/15087042052_e7fb9c9aed_o.png'" 
+                                                            onmouseout="this.src='https://farm4.staticflickr.com/3881/14900764590_04d02aa797_o.png'"></a>&nbsp;&nbsp;<br>
+    
+</div>
+
+
+
+<div id = "allPosts" >
+	{block:Posts}
+	
+	
+
+
+<!--	<div class="page{CurrentPage}"> -->
+    
+        
+         
+         {block:Text}
+                   <div class="postcontent snap">
+                    <div class="textPost">
+                        {Body}
+                        </div>
+                    </div>
+                {/block:Text}
+        
+        
+        {block:Video}
+             <div class='postcontent snap'>
+                        <div class="videoContent">{Video-700}</div><br><br>
+                       
+                {block:Caption}
+                    <div id="videoCaption"  class = "caption captionVideo">
+                            {Caption}
+                
+    {block:More} <a href="{Permalink}" class="button">{lang:Read more}</a> {/block:More}
+                    
+                </div>{/block:Caption}
+                  
+                  </div>      
+                {/block:Video}
+
+    
+    
+   	    {block:Photo}
+    	<div class='postcontent snap'>
+            <a href="{Permalink}"><img class='imagecontent' src="{PhotoURL-HighRes}"></a>
+        
+            {block:Caption}
+                <div id = "photoCaption" class='captionVideo'>{Caption}                
+    {block:More} <a href="{Permalink}" class="button">{lang:Read more}</a> {/block:More}
+                    
+                </div>
+                  
+                    {/block:Caption}
+                	
+        </div>
+        {/block:Photo}
+        
+
+    {block:Photoset}
+
+        <div class='postcontent snap'>
+        {block:Photos}
+                <a href="{Permalink}" id = "set" class="photo-set"><img class="imagecontent" src="{PhotoURL-HighRes}"></a>
+{/block:Photos}
+        {block:Caption}
+            <div id = "setCaption" class='captionSet'>{Caption}                
+                    {block:More} <a href="{Permalink}" class="button">{lang:Read more}</a> {/block:More}
+                    
+                    <br>
+                    <a id="setLink" href="{Permalink}">View Set</a>
+                </div>
+
+        {/block:Caption}
+        </div>
+    {/block:Photoset}
+        
+        
+        
+
+        
+            {block:Permalink}
+        {/block:Permalink}
+    
+
+    
+        {/block:Posts}
+        
+<p class= "footer">
+            {block:PreviousPage}
+                <a href="{PreviousPage}">&#171;previous</a>
+            {/block:PreviousPage}{block:NextPage}
+                <a href="{NextPage}">next&#187;</a>
+            {/block:NextPage}
+            </p>
+                
+            </div>
+
+                    <br><br>
+    
+</div>
+    
+{block:IndexPage}
+<br>
+	<div class="bottom">
+	<div class="bottomText">
+	<br>
+        <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">alecmcclure.com and all contents</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.alecmcclure.com" property="cc:attributionName" rel="cc:attributionURL">Alec McClure</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+        <br>
+        </div>
+        <div class="centered"> </div>
+	</div>
+	
+	{/block:IndexPage}
+{block:Permalink}
+
+<br>
+	<div class="bottom">
+	<div class="bottomText">
+        <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">alecmcclure.com and all contents</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.alecmcclure.com" property="cc:attributionName" rel="cc:attributionURL">Alec McClure</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+        <br>
+        </div>
+        <div class="centered">
+    	    <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>&emsp;
+	    </div>
+	</div>
+
+
+{/block:Permalink}
+
+
+
+	
+
+</body>
+    
+<script type="text/javascript">
+
+
+window.onload = check();
+function check(){
+    
+    if ((location.href != "http://alecmcclure.com/") && (location.href != "http://alecmcclure.com/tagged/about")){
+        
+        var target = document.getElementById("list");
+                if (target.style.display == "none"){
+                     target.style.display = "";
+                }
+                
+        if ((location.href == "http://alecmcclure.com/tagged/structural") ||
+            (location.href == "http://alecmcclure.com/tagged/people") ||   
+            (location.href == "http://alecmcclure.com/tagged/photojournalism") ||   
+            (location.href == "http://alecmcclure.com/tagged/commercial") ||   
+            (location.href == "http://alecmcclure.com/tagged/photonav") ||   
+            (location.href == "http://alecmcclure.com/tagged/concert") ){  
+                var target2 = document.getElementById("photoList");
+                if (target2.style.display == "none"){
+                     target2.style.display = "";
+                }
+            }
+    }   
+}
+
+function swap(targetId){
+  if (document.getElementById){
+        target = document.getElementById(targetId);
+            if (target.style.display == "none"){
+                target.style.display = "";
+                menuOpen = true;
+            } else{
+                target.style.display = "none";
+                menuOpen = false;
+            }
+                
+  }
+}
+
+
+window.onload=showsplashbox();
+function showsplashbox() {
+    
+   if (location.href != 'http://alecmcclure.com/'){
+            //alert('you should see something');
+        if (location.href == 'http://alecmcclure.com/tagged/photonav'){
+          
+           document.getElementById('allPosts').style.display = 'none';
+           document.getElementById('landing').style.display = 'none';
+           document.getElementById('photoLanding').style.display = 'flex';
+           
+          
+      }
+   } else {
+      // alert("you should see nothing");
+           document.getElementById('allPosts').style.display = 'none';
+           document.getElementById('landing').style.display = 'flex';
+
+     //  document.write("<!--");
+               /*
+           var list = document.getElementsByClassName("myButton");
+            for (var i = 0; i < list.length; i++) {
+                // list[i] is a node with the desired class name
+                list.style.display = 'none';
+            }   */
+   }
+   
+};
+</script>
+
+<script type="text/javascript">
+// MOVE THE CAPTION FOR THE PERMALINK PAGE
+window.onload = moveCap();
+function moveCap() {
+    
+          //var dataType;
+          var video = document.getElementById('videoCaption');
+          var photo = document.getElementById('photoCaption');
+          var photoset = document.getElementById('setCaption');
+          //var psDisplay = document.getElementById(set).getElementsByClassName('photoset');
+          
+    //if()
+           //var bottom = document.querySelectorAll('.commentz').style;
+           //var defaultS = document.querySelectorAll('.defaultCaption').style;
+           var pathArray = window.location.pathname.split( '/' );
+           //alert(pathArray[1]);
+   if (pathArray[1] == "post") {
+   //if (location.href == 'http://alecmcclure.com/post/') {
+           //side = bottom;
+           //side.classList.add('commentz');
+           //document.getElementById("captionId").className = "commentz";
+           
+           if (video != null){
+               video.classList.remove('caption', 'captionVideo');
+               video.classList.add('commentz');
+           }
+           if (photoset != null){
+               /*
+               photoset.classList.remove('captionSet');
+               photoset.classList.add('commentz');
+               */
+               
+                document.getElementById('setLink').classList.add('hidden');;
+               
+               //alert(photoset.classList.contains('commentz'));
+                //alert(side.classList.contains('commentz'));
+                //alert("changing style to comment");
+               var psDisplay = document.getElementsByClassName('photo-set');
+               //alert(psDisplay.length);
+                for (var i = 0; i < psDisplay.length; i++) {
+                   //alert("i = " + i );
+                    psDisplay[i].style.display = 'block';
+                }
+       
+                
+           }
+           if (photo != null){
+               photo.classList.remove('captionVideo');
+               photo.classList.add('commentz');
+           }
+   } else {
+       
+       /*
+       var childList = psDisplay[1].childNodes;
+       alert(childList.length);
+       for (var i = 1; i < childList.length; i++){
+           psDisplay.children[i].style.display = 'none';
+           
+       }
+       */
+   }
+
+};
+
+
+window.onload = adjustMap();
+function adjustMap() {
+    var howWide =      document.getElementById("imagine").clientWidth;
+    //alert("my bidnes");
+    var ImageMap = function (map) {
+            var n,
+                areas = map.getElementsByClassName('shapes'),
+                len = areas.length,
+                coords = [],
+                previousWidth = 1384;
+            for (n = 0; n < len; n++) {
+                coords[n] = areas[n].coords.split(',');
+            }
+            this.resize = function () {
+                var n, m, clen,
+                    
+                   // x = document.body.clientWidth / previousWidth;
+                   x = document.getElementById("imagine").clientWidth / previousWidth;
+                    
+                for (n = 0; n < len; n++) {
+                    clen = coords[n].length;
+                    for (m = 0; m < clen; m++) {
+                        coords[n][m] *= x;
+                        //coords[n][m] *= 0.7;
+                    }
+                    areas[n].coords = coords[n].join(',');
+                }
+                previousWidth = document.getElementById("imagine").clientWidth; //document.body.clientWidth;
+                return true;
+            };
+            window.onresize = this.resize;
+        },
+        imageMap = new ImageMap(document.getElementById('navMap'));
+    imageMap.resize();
+    return;
+};
+
+</script>
+</html>
+
+
