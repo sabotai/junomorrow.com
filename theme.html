@@ -1,511 +1,27 @@
 <html>
 
 <head>
-<!--     <link rel="stylesheet" media="screen" href="urban.css"> -->
-
-    
-
-<!-- 
-    <script type="text/javascript" src="http://codysherman.tumblr.com/tools/infinite-scrolling/code"></script>
-    
--->
-
-
-
-
-
-
-    <style type="text/css">
-
-
-
-body {
-    font-family: "Ubuntu", Ubuntu, sans-serif;
-    background-color:black;
-
-}
-
-iframe#tumblr_controls {right:2px !important; position: fixed !important}
-
-
-
-
-.iconSet {
-    z-index:1;
-}
-.icon{
-    
-    padding-left:1%;
-    padding-right:1%;
-    padding-top:1%;
-    padding-bottom:1%;
-    
-    display:inline-block;
-    
-}
-.overflow-hidden {
-    display:inline-table;
-}
-
-.overflow-hidden:hover img{
-    opacity:0.3;   
-    filter: alpha(opacity=30);
-}
-.overlay {
-    display:inline;   
-
-}
-
-.overlay .text-overlay {
-    display:none;
-}
-.overlay .bg-overlay {
-    display:none;
-}
-    
-.overflow-hidden:hover .overlay {
-  display:block;
-  position:relative;
-  z-index:999;
-  background-color: #424242;
-  height:50px;
-  opacity:0.8;
-    
-}
-
-
-.overflow-hidden:hover .text-overlay {
-  display:block;
-  position:relative;
-  z-index:999;
-  text-transform: uppercase;
-  font-weight: bold
-  font-size:18px;
-  color: #fff;
-  margin-top: -90px;
-  padding-top:15px;
-  margin-left:20px;
-}
-
-
-
-.tumblrbuttons {
-   /* position: absolute;
-    float: right;
-	margin: 10px;
-	text-align: left;*/
-    
-    
-    
-    position: absolute;
-    float: right;
-	right: 10px;
-	text-align: left;
-	top: 10px;
-	font-size: 80%;
-	max-width:30%;
-    
-    }
-
-.invisible {
-    text-decoration: none;
-    color: black;
-}
-
-.commentz {
-    left: 200px;
-    /*//max-width: 1384px;    */
-    max-width:1384px;
-    margin-left:20px;
-    margin-right:20px;
-    padding-bottom:20px;
-    text-align:justify;
-    }
- .commentz p, span{
-    width: 78%;
-    /*max-width: 1024px;*/
-    
-    
-}
-    
-.commentz img{
-    width:100%;
-
-}
-    
-.numberofcomments {
-    font-size: 85%;
-    }
-
-.disqus_thread2 {
-     position: relative;
-     padding: 20px;
-    left: 200px;
-
-/* 	width: 800;*/
-	background-color: #F2F2F2;
-/*	padding-left: 50px;*/
-/*	top:10px;*/
-	margin-top: 10px;
-    }
-
-.sidebar {
-     position: fixed;
-	width: 180px;
-	background-color: #2F2F2F;
-	text-align: center;
-	margin-top: 50px;
-	font-size: 12px;
-	height: 70%;
-
-}
-
-.sidecontent {
-	min-height: 100%;
-	margin-top:25%;
-	margin-bottom:-20%;
-    
-    
-}
-
-.sidetitle {
-
-}
-
-.dreamscapes a:link {
-    color:#FFFFFF;
-    font-weight: 400;
-}
-
-.dreamscapes a:visited {
-    color: #B8B8B8;
-}
-.dreamscapes a:hover {
-    color: #FF00FF;
-    text-decoration: underline;
-}
-
-.dreamscapes {
-	font-family: "Ubuntu", sans-serif;
-	
-	text-align: left;
-	margin-left: 50px;
-	font-size: 16px;
-    
-    
-}
-
-.bottom {
-    position:relative;
-    padding-bottom: 1px;
-    margin-top:1px;
-    padding-left:75px;
-    
-    left:200px;
-    
-    margin-right:auto;
-    width:800px;
-    height:5%;
-    max-width: 1384px;
-    
-    top:20px;
-    
-}
-
-
-.bottomText {
-    font-size:75%;
-    left:200px;
-    color:white;
-}
-
-.footer {
-    padding-top:10px;
-    padding-bottom:10px;
-    min-width:1025px;
-    max-width:1384px;
-    left:200px;
-    width:80%;
-    background-color: #737373;
-    position:relative;
-    text-align:center;
-}
-
-.footer a:link {
-
-    color: #FFF;
-    font-weight: 600;
-    padding-top:10px;
-    padding-bottom:10px;
-
-}
-.footer a:visited {
-
-    color: #FFF;
-    font-weight: 600;
-
-}
-
-.centered {
-    
-    margin-top:10px;
-   padding-left:25%;
-    width:100px;
-    
-}
-
-.socialicons {
-	max-width:20%;
-
-	top-margin:280px;
-	height: 360px;
-
-}
-
-.topbarZ {
-	position: relative;
-
-	left: 200px;
-	margin-top:2.5%;
-	width: 80%;
-    max-width: 1384px;
-    min-width: 1025px; 
-	
-	height: 150px;
-	background-color: #737373;
-
-}
-
-.profileAlec {
-    
-    left:200px;
-	width: 70%;
-	min-width: 500px;
-	max-width: 1000px;
-    filter: invert(1);
-    -webkit-filter: invert(1);
-    -moz-filter: invert(1);
-    -o-filter: invert(1);
-    -ms-filter: invert(1);
-	
-    
-}
-
-.profilepic {
-	float: right;
-	margin-top: 5px;
-	margin-left: 10px;
-	margin-right:20px;
-
-}
-
-
-.postcontent {
-	position: relative;
-    left: 200px;
-	top: 10px;
-	width:80%;
-	min-width: 1025px;
-    max-width: 1384px;
-	background-color: #2F2F2F;
-	color:white;
-    margin-top: 15px;
-	margin-bottom: 50px;
-
-}
-
-.textPost2 {
-	padding-left: 20px;
-	padding-top:10px;
-	padding-bottom:10px;
-	padding-right:20px;
-	max-width: 75%;
-	margin-right: auto;
-    text-align:justify;
-	font-size: 80%;
-	min-height:350px;
-	min-width:900px;
-}
-.textPost2 img{
-    float:left;
-    min-height:50%;
-    min-width:500px;
-}
-
-
-.imagecontent {
-	padding-left: 20px;
-	padding-top:20px;
-	padding-bottom:20px;
-    max-width:1024px;
-	width: 75%;
-	
-}
-
-.videoContent {
-    position:relative;
-	/*//padding-left: 20%;*/
-	padding-top:20px;
-	/*//padding-bottom:5px;*/
-	padding-bottom:45%;
-    max-width:1024px;
-    padding-right:29%;
-	width: 46%;
-	margin-left:20px;
-
-}
-
-.videoContent iframe,
-.videoContent object,
-.videoContent embed {
-    
-    position: absolute;
-	width: 100%;
-	height:100%;
-	
-    max-width:1024px;
-
-}
-
-.caption {
-
-}
-
-.captionSet {
-    
-	position: absolute;
-	float: right;
-	margin-left: 10px;
-	margin-right:15px;
-	top: 200px;
-	margin-top:auto;
-	/*//bottom:50px;*/
-	font-size: 85%;
-	max-width:30%;
-	min-width:10%;
-	
-    left:77%;
-    text-align: justify;
-}
-
-
-.captionVideo {
-	position: absolute;
-	float: right;
-	margin-left: 10px;
-	margin-right:15px;
-	/*//top: 100px;*/
-	margin-top:auto;
-	bottom:100px;
-	font-size: 85%;
-	max-width:30%;
-	min-width:10%;
-    left:77%;
-    text-align: justify;
-}
-
-.navigation {
-	margin-left: 200px;
-	text-align: center;
-	float: right;
-	width: 200px;
-
-
-
-}
-
-
-.snap {
-}
-
-a:link {
-    color: #136680;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-a:hover {
-    color: #FF00FF;
-    text-decoration: underline;
-}
-
-
-#allPosts {
-    display:block;    
-
-}
-
-#landing {
-    
-    display:none;
-	position: relative;
-	width:700px;
-	left: 200px;
-	padding-left:120px;
-	top:30px;
-	padding-bottom:55px;
-}
-#photoLanding{
-    
-    display:none;
-	position: relative;
-	width:900px;
-
-	left: 200px;
-	padding-left:60px;
-	top:30px;
-	padding-bottom:55px;
-	
-
-}
-.land{
-    
-    display:none;
-	position: relative;
-	float:left;
-
-	left: 200px;
-	padding-left:10%;
-	padding-right:10%;
-    
-}
-
-.navPanel{
-    
-	padding-left: 5%;
-    left:200px;
-    width:90%;
-    
-}
-
-.photo-set {
-    display: none;
-}
-
-.photo-set:first-child {
-    display: block;
-}
-
-.hidden {
-    display: none;
-}
-.show {
-    display: block;
-    
-}
-
-.title {
-    margin-left:100px;    
-
-}
-
-</style>
-
-<script type="text/javascript">
-
-
-
+   <link rel="stylesheet" type="text/css"  href="http://static.tumblr.com/xbtl0w0/J0tnpi46q/style.css">
+
+    <script type="text/javascript">
+            if (location.href == "http://alecmcclure.com/" || location.href == "http://www.alecmcclure.com" || location.href == "http://www.alecmcclure.com/" ||location.href ==  "http://alecmcclure.com"){
+                console.log("redirecting");
+                window.location.href = "http://alecmcclure.com/post/114453643913/portfolio";
+				/* old code for front page
+				                document.getElementById("landing").innerHTML = "<a href='http://alecmcclure.com/post/114453643913/portfolio'><img src='https://farm8.staticflickr.com/7593/16739522899_e2b7a8bfbb_o.png'                                                             onmouseover='this.src="https://farm6.staticflickr.com/5571/14900834337_74ef0f04d3_o.png"' 
+                                                            onmouseout='this.src="https://farm8.staticflickr.com/7593/16739522899_e2b7a8bfbb_o.png"'></a>&nbsp;&nbsp;
+    <a href='http://alecmcclure.com/tagged/photonav'><img src='https://farm8.staticflickr.com/7594/16924729231_bd1bef79a7_o.png'
+                                                            onmouseover='this.src="https://farm4.staticflickr.com/3876/15064400036_828c6a9dfe_o.png"'
+                                                            onmouseout='this.src="https://farm8.staticflickr.com/7594/16924729231_bd1bef79a7_o.png"'></a>&nbsp;&nbsp;
+    <a href='http://alecmcclure.com/tagged/sketches'><img src='https://farm9.staticflickr.com/8689/16718393517_511883f810_o.png'
+                                                            onmouseover='this.src="https://farm6.staticflickr.com/5561/15087041272_5158cd297a_o.png"'
+                                                            onmouseout='this.src="https://farm9.staticflickr.com/8689/16718393517_511883f810_o.png"'></a>&nbsp;&nbsp;<br>";
+        
+		*/
+            }
+   
 </script>
+
 
 	<title>alec mcclure</title>
 
@@ -514,7 +30,7 @@ a:hover {
 
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500, 600' rel='stylesheet' type='text/css'> 
 
-   
+   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cutive+Mono:400,400italic,700normal,700italic"/>
 
 </head>
 
@@ -545,7 +61,7 @@ a:hover {
 			 <div id="list" style="display:none;">
 		    	 &nbsp;&nbsp;<a href="http://alecmcclure.com/post/114453643913/portfolio">art&design</a>
 		    	 <br>
-		    	 &nbsp;&nbsp;<a href="#" onclick="swap('photoList');return false;">photo</a>
+		    	 &nbsp;&nbsp;<a href="#" onclick="swap('photoList');return false;"><a href="http://alecmcclure.com/tagged/photonav">photo</a></a>
 		    	 <br>
 		    	 
     		    	 <div id="photoList" style="display:none;font-size:90%;">
@@ -553,7 +69,7 @@ a:hover {
     		    	 <br>
     		    	 &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://alecmcclure.com/tagged/people">people</a>
     		    	 <br>
-    		    	 &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://alecmcclure.com/tagged/photojournalism">photojournalism</a>
+    		    	 &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://alecmcclure.com/tagged/photojournalism">journalism</a>
     		    	 <br>
     		    	<!-- &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://alecmcclure.com/tagged/commercial">commercial</a>
     		    	 <br> -->
@@ -588,7 +104,7 @@ a:hover {
 	{block:IndexPage}
 	<div class="topbarZ">
 		<p class="profileAlec"><a href="http://alecmcclure.com">
-		<img src="https://farm8.staticflickr.com/7372/16432932315_ab678c3dc8_o.png" class="title"></p></a>
+		<img src="https://farm1.staticflickr.com/422/18442100455_20ae671af9_o.png" class="title"></p></a>
 	</div><br>
 	
 	
@@ -596,59 +112,16 @@ a:hover {
 	{block:Permalink}
 	<div class="topbarZ">
 		<p class="profileAlec"><a href="http://alecmcclure.com">
-		<img src="https://farm8.staticflickr.com/7372/16432932315_ab678c3dc8_o.png" class="title"></p></a>
+		<img src="https://farm1.staticflickr.com/422/18442100455_20ae671af9_o.png" class="title"></p></a>
 	</div><br>
 	{/block:Permalink}
-<!--
-	
-	<map name="navMap" id="navMap">
-        <area class="shapes" shape="poly" coords="310,0,1140,0,723,716"
-      href="http://alecmcclure.com/tagged/structural"
-      alt="Photography"/>
-        <area class="shapes" shape="poly" coords="50,819,415,241,720,819"
-      href="http://alecmcclure.com/tagged/artdesign"
-      alt="Art"/>
-        <area class="shapes" shape="poly" coords="714,819,1047,241,1384,819"
-      href="http://alecmcclure.com/tagged/artdesign"
-      alt="Design"/>
-    </map>
-	
-<div id = "landing">
-    <div class="navPanel">
-        <img  src = "https://farm4.staticflickr.com/3893/14996021135_0abc53506d_o.png"  usemap="#navMap" class = "navPanel" id = "imagine">
-    </div>
-</div>
--->
+
 
 <div id = "landing">
-    <a href="http://alecmcclure.com/post/114453643913/portfolio"><img src="https://farm8.staticflickr.com/7593/16739522899_e2b7a8bfbb_o.png" 
-                                                            onmouseover="this.src='https://farm6.staticflickr.com/5571/14900834337_74ef0f04d3_o.png'" 
-                                                            onmouseout="this.src='https://farm8.staticflickr.com/7593/16739522899_e2b7a8bfbb_o.png'"></a>&nbsp;&nbsp;
-    <a href="http://alecmcclure.com/tagged/photonav"><img src="https://farm8.staticflickr.com/7594/16924729231_bd1bef79a7_o.png"
-                                                            onmouseover="this.src='https://farm4.staticflickr.com/3876/15064400036_828c6a9dfe_o.png'"
-                                                            onmouseout="this.src='https://farm8.staticflickr.com/7594/16924729231_bd1bef79a7_o.png'"></a>&nbsp;&nbsp;
-    <a href="http://alecmcclure.com/tagged/sketches"><img src="https://farm9.staticflickr.com/8689/16718393517_511883f810_o.png"
-                                                            onmouseover="this.src='https://farm6.staticflickr.com/5561/15087041272_5158cd297a_o.png'"
-                                                            onmouseout="this.src='https://farm9.staticflickr.com/8689/16718393517_511883f810_o.png'"></a>&nbsp;&nbsp;<br>
+    
 </div>
 
 <div id = "photoLanding">
-    <a href="http://alecmcclure.com/tagged/structural"><img src="https://farm4.staticflickr.com/3838/15087400075_238caf6762_o.png" 
-                                                            onmouseover="this.src='https://farm6.staticflickr.com/5557/14900820288_f4da83714c_o.png'" 
-                                                            onmouseout="this.src='https://farm4.staticflickr.com/3838/15087400075_238caf6762_o.png'"></a>&nbsp;&nbsp;
-                                                            
-    <a href="http://alecmcclure.com/tagged/people"><img src="https://farm4.staticflickr.com/3841/14900820948_f98dfd450d_o.png" 
-                                                            onmouseover="this.src='https://farm6.staticflickr.com/5557/14900835127_89788a7790_o.png'" 
-                                                            onmouseout="this.src='https://farm4.staticflickr.com/3841/14900820948_f98dfd450d_o.png'"></a>&nbsp;&nbsp;
-                                                            
-    <a href="http://alecmcclure.com/tagged/photojournalism"><img src="https://farm4.staticflickr.com/3853/14900713079_8c3bfb733c_o.png" 
-                                                            onmouseover="this.src='https://farm6.staticflickr.com/5594/14900765290_c02e6b3b2f_o.png'" 
-                                                            onmouseout="this.src='https://farm4.staticflickr.com/3853/14900713079_8c3bfb733c_o.png'"></a>&nbsp;&nbsp;
-                                                            
-    <a href="http://alecmcclure.com/tagged/concert"><img src="https://farm4.staticflickr.com/3881/14900764590_04d02aa797_o.png" 
-                                                            onmouseover="this.src='https://farm4.staticflickr.com/3888/15087042052_e7fb9c9aed_o.png'" 
-                                                            onmouseout="this.src='https://farm4.staticflickr.com/3881/14900764590_04d02aa797_o.png'"></a>&nbsp;&nbsp;<br>
-    
 </div>
 
 
@@ -673,6 +146,7 @@ a:hover {
         
         
         {block:Video}
+   	    {block:IndexPage}
              <div class='postcontent snap'>
                         <div class="videoContent">{Video-700}</div><br><br>
                        
@@ -685,11 +159,36 @@ a:hover {
                 </div>{/block:Caption}
                   
                   </div>      
-                {/block:Video}
+                  
+                  
+                  
+   	    {/block:IndexPage}
+   	    
+   	    {block:Permalink}
+             <div class='postcontent snap'>
+                        <div class="videoContent-perm">{Video-700}</div><br><br>
+                       
+                {block:Caption}
+                    <div id="videoCaption"  class = "caption captionVideo">
+                            {Caption}
+                
+    {block:More} <a href="{Permalink}" class="button">{lang:Read more}</a> {/block:More}
+                    
+                </div>{/block:Caption}
+                  
+                  </div>      
+                  
+                  
+                  
+   	    {/block:Permalink}
+                
+                
+        {/block:Video}
 
     
     
    	    {block:Photo}
+   	    {block:IndexPage}
     	<div class='postcontent snap'>
             <a href="{Permalink}"><img class='imagecontent' src="{PhotoURL-HighRes}"></a>
         
@@ -702,10 +201,29 @@ a:hover {
                     {/block:Caption}
                 	
         </div>
+   	    {/block:IndexPage}
+        
+        
+   	    {block:PermalinkPage} 
+    	<div class='postcontent snap'>
+            <a href="{Permalink}"><img class='imagecontent-perm' src="{PhotoURL-HighRes}"></a>
+        
+            {block:Caption}
+                <div id = "photoCaption" class='captionVideo'>{Caption}                
+    {block:More} <a href="{Permalink}" class="button">{lang:Read more}</a> {/block:More}
+                    
+                </div>
+                  
+                    {/block:Caption}
+                	
+        </div>
+   	    {/block:PermalinkPage} 
+        
         {/block:Photo}
         
 
     {block:Photoset}
+   	    {block:IndexPage}
 
         <div class='postcontent snap'>
         {block:Photos}
@@ -721,6 +239,33 @@ a:hover {
 
         {/block:Caption}
         </div>
+        
+        
+   	    {/block:IndexPage}
+   	    
+   	    
+   	    {block:PermalinkPage} 
+   	    
+
+        <div class='postcontent snap'>
+        {block:Photos}
+                <a href="{Permalink}" id = "set" class="photo-set-perm"><img class="imagecontent" src="{PhotoURL-HighRes}"></a>
+{/block:Photos}
+        {block:Caption}
+            <div id = "setCaption" class='captionSet'>{Caption}                
+                    {block:More} <a href="{Permalink}" class="button">{lang:Read more}</a> {/block:More}
+                    
+                    <br>
+                    <a id="setLink" href="{Permalink}">View Set</a>
+                </div>
+
+        {/block:Caption}
+        </div>
+        
+   	    
+   	    {/block:PermalinkPage} 
+        
+        
     {/block:Photoset}
         
         
@@ -789,6 +334,11 @@ a:hover {
 
 window.onload = check();
 function check(){
+    
+     if (location.href == "http://alecmcclure.com/tagged/photonav"){
+                console.log("photonav page reached.");
+				    document.getElementById("photoLanding").innerHTML="<a href='http://alecmcclure.com/tagged/structural'><img src='https://farm1.staticflickr.com/448/18504313792_2e861b3e19_o.png' onmouseover='this.src=\"https://farm6.staticflickr.com/5557/14900820288_f4da83714c_o.png\"' onmouseout='this.src=\"https://farm1.staticflickr.com/448/18504313792_2e861b3e19_o.png\"'></a>&nbsp;&nbsp; <a href='http://alecmcclure.com/tagged/people'><img src='https://farm1.staticflickr.com/452/18322500399_286d94d1ce_o.png'onmouseover='this.src=\"https://farm6.staticflickr.com/5557/14900835127_89788a7790_o.png\"' onmouseout='this.src=\"https://farm1.staticflickr.com/452/18322500399_286d94d1ce_o.png\"'></a>&nbsp;&nbsp; <a href='http://alecmcclure.com/tagged/photojournalism'><img src='https://farm1.staticflickr.com/417/18482274856_3f18a10f44_o.png' onmouseover='this.src=\"https://farm6.staticflickr.com/5594/14900765290_c02e6b3b2f_o.png\"' onmouseout='this.src=\"https://farm1.staticflickr.com/417/18482274856_3f18a10f44_o.png\"'></a>&nbsp;&nbsp; <a href='http://alecmcclure.com/tagged/concert'><img src='https://farm1.staticflickr.com/290/18508712345_2bf71d069e_o.png' onmouseover='this.src=\"https://farm4.staticflickr.com/3888/15087042052_e7fb9c9aed_o.png\"'   onmouseout='this.src=\"https://farm1.staticflickr.com/290/18508712345_2bf71d069e_o.png\"'></a>&nbsp;&nbsp;<br>";
+     }
     
     if ((location.href != "http://alecmcclure.com/") && (location.href != "http://alecmcclure.com/tagged/about")){
         
@@ -908,55 +458,11 @@ function moveCap() {
            }
    } else {
        
-       /*
-       var childList = psDisplay[1].childNodes;
-       alert(childList.length);
-       for (var i = 1; i < childList.length; i++){
-           psDisplay.children[i].style.display = 'none';
-           
-       }
-       */
    }
 
 };
 
 
-window.onload = adjustMap();
-function adjustMap() {
-    var howWide =      document.getElementById("imagine").clientWidth;
-    //alert("my bidnes");
-    var ImageMap = function (map) {
-            var n,
-                areas = map.getElementsByClassName('shapes'),
-                len = areas.length,
-                coords = [],
-                previousWidth = 1384;
-            for (n = 0; n < len; n++) {
-                coords[n] = areas[n].coords.split(',');
-            }
-            this.resize = function () {
-                var n, m, clen,
-                    
-                   // x = document.body.clientWidth / previousWidth;
-                   x = document.getElementById("imagine").clientWidth / previousWidth;
-                    
-                for (n = 0; n < len; n++) {
-                    clen = coords[n].length;
-                    for (m = 0; m < clen; m++) {
-                        coords[n][m] *= x;
-                        //coords[n][m] *= 0.7;
-                    }
-                    areas[n].coords = coords[n].join(',');
-                }
-                previousWidth = document.getElementById("imagine").clientWidth; //document.body.clientWidth;
-                return true;
-            };
-            window.onresize = this.resize;
-        },
-        imageMap = new ImageMap(document.getElementById('navMap'));
-    imageMap.resize();
-    return;
-};
 
 </script>
 </html>
