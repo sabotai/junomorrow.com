@@ -2,17 +2,43 @@
 
 <head>
 
-<!-- Front landing redirect script-->
-   <link rel="stylesheet" type="text/css"  href="http://static.tumblr.com/xbtl0w0/Wfenrcsqy/style.css">
+<!-- 
+    Welcome to my website's source code!
+    www.alecmcclure.com
+    
+    I'd love to hear from you!
+    Contact me at...
+    
+    alexander (dot) mcclure (at) gmail
+-->    
 
-    <script type="text/javascript">
-            if (location.href == "http://alecmcclure.com/" || location.href == "http://www.alecmcclure.com" || location.href == "http://www.alecmcclure.com/" ||location.href ==  "http://alecmcclure.com"){
-                console.log("redirecting");
-                window.location.href = "http://alecmcclure.com/post/114453643913/portfolio";
-				
+<!-- Custom CSS -->
+
+<link rel="stylesheet" type="text/css"  href="http://static.tumblr.com/xbtl0w0/rhhnrdum9/style.css">
+
+
+<!-- Front landing redirect script-->
+
+
+<script type="text/javascript">
+            if (location.href == "http://alecmcclure.com/" 
+                || location.href == "http://www.alecmcclure.com" 
+                || location.href == "http://www.alecmcclure.com/" 
+                || location.href ==  "http://alecmcclure.com"){
+                    console.log("redirecting");
+                    window.location.href = "http://alecmcclure.com/post/114453643913/portfolio";
             }
    
 </script>
+
+
+<!-- Slick Image Carousel CSS and JS -->
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.6/slick.css"/>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.6/slick.min.js"></script>
+
+
 
 <!-- Google Analytics Script-->
 <script>
@@ -28,7 +54,7 @@
 
 <!-- Title and Site Icons -->
 
-	<title>alec mcclure</title>
+<title>alec mcclure</title>
 
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -49,9 +75,11 @@
 <meta name="theme-color" content="#ffffff">
 
 
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500, 600' rel='stylesheet' type='text/css'> 
+<!-- Google Fonts -->
 
-   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cutive+Mono:400,400italic,700normal,700italic"/>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500, 600' rel='stylesheet' type='text/css'> 
+
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cutive+Mono:400,400italic,700normal,700italic"/>
 
 </head>
 
@@ -74,7 +102,8 @@
 	<div class="sidebar">
 	
 
-		<div class="sidecontent">				<img src="https://farm1.staticflickr.com/346/18797224591_8fced8f9d7_o.png">
+		<div class="sidecontent">				
+		    <img src="https://farm1.staticflickr.com/346/18797224591_8fced8f9d7_o.png">
 			<p class="sidetitle"></p>
 			<div class="dreamscapes">
 
@@ -352,6 +381,12 @@
 
 </body>
     
+<!--    The photo navigation page is actually hidden inside here.
+        It's pretty clumsy, so I'll redo it with best practices in
+        mind at some point.
+-->
+        
+    
 <script type="text/javascript">
 
 
@@ -415,33 +450,22 @@ function showsplashbox() {
       // alert("you should see nothing");
            document.getElementById('allPosts').style.display = 'none';
            document.getElementById('landing').style.display = 'flex';
-
-     //  document.write("<!--");
-               /*
-           var list = document.getElementsByClassName("myButton");
-            for (var i = 0; i < list.length; i++) {
-                // list[i] is a node with the desired class name
-                list.style.display = 'none';
-            }   */
    }
    
 };
 </script>
 
+
+<!-- Legacy hack for tumblr, changing classes.  Will migrate to jQuery eventually -->
 <script type="text/javascript">
 // MOVE THE CAPTION FOR THE PERMALINK PAGE
 window.onload = moveCap();
 function moveCap() {
     
-          //var dataType;
           var video = document.getElementById('videoCaption');
           var photo = document.getElementById('photoCaption');
           var photoset = document.getElementById('setCaption');
-          //var psDisplay = document.getElementById(set).getElementsByClassName('photoset');
           
-    //if()
-           //var bottom = document.querySelectorAll('.commentz').style;
-           //var defaultS = document.querySelectorAll('.defaultCaption').style;
            var pathArray = window.location.pathname.split( '/' );
            //alert(pathArray[1]);
    if (pathArray[1] == "post") {
