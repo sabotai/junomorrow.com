@@ -39,9 +39,10 @@
 
 
 <!-- Slick Image Carousel CSS and JS -->
+<!-- (source modified a bit) -->
 
-<link rel="stylesheet" type="text/css" href="http://static.tumblr.com/xbtl0w0/8o6nria28/slick.css"/>
-<link rel="stylesheet" type="text/css" href="http://static.tumblr.com/xbtl0w0/p4Fnri9sf/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="http://static.tumblr.com/xbtl0w0/mWTnrka9c/slick.css"/>
+<link rel="stylesheet" type="text/css" href="http://static.tumblr.com/xbtl0w0/VTqnrk9lz/slick-theme.css"/>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.6/slick.min.js"></script>
 
 <!-- Default Slick Settings -->
@@ -55,7 +56,10 @@
           infinite: true,
           speed: 300,
           slidesToShow: 1,
-          adaptiveHeight: true
+          adaptiveHeight: true,
+        lazyLoad: 'ondemand',
+        autoplay: true,
+        autoplaySpeed: 2000
       });
     });
 </script>    
@@ -202,6 +206,7 @@
 </div>
 
 <div id = "photoLanding">
+    <!-- JS Inject Content -->
 </div>
 
 
@@ -378,10 +383,13 @@
 {block:IndexPage}
 <br>
 	<div class="bottom">
-	<div class="bottomText">
+	<div class="bottomText centerText">
 	<br>
-        <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">alecmcclure.com and all contents</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.alecmcclure.com" property="cc:attributionName" rel="cc:attributionURL">Alec McClure</a> are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+        <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">alecmcclure.com and all contents</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.alecmcclure.com" property="cc:attributionName" rel="cc:attributionURL">Alec McClure</a> are licensed under a 
         <br>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+        <br><br>
+        <span>Website Design and Development by Alec McClure</span>
         </div>
         <div class="centered"> </div>
 	</div>
