@@ -444,6 +444,17 @@ iframe#tumblr_controls {right:2px !important; position: fixed !important}
 }
 
 
+.rightTP{
+  float:right;
+  margin:3%;
+}
+.leftTP{
+ padding:3% 0;
+ margin:3%;
+ font-size:85%;
+}
+
+
 .imagecontent {
     padding-left: 20px;
     padding-top:20px;
