@@ -14,27 +14,37 @@
 
 <!-- Custom CSS -->
 
-<link rel="stylesheet" type="text/css"  href="http://static.tumblr.com/xbtl0w0/YsNnrr1y4/style.css">
+<link rel="stylesheet" type="text/css"  href="http://static.tumblr.com/xbtl0w0/RCxnrrpmu/style.css">
 
-
-<!-- Front landing redirect script-->
-
-
-<script type="text/javascript">
-            if (location.href == "http://alecmcclure.com/" 
-                || location.href == "http://www.alecmcclure.com" 
-                || location.href == "http://www.alecmcclure.com/" 
-                || location.href ==  "http://alecmcclure.com"){
-                    console.log("redirecting");
-                    window.location.href = "http://alecmcclure.com/portfolio";
-            }
-   
-</script>
 
 <!--    jQuery  -->
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<!-- Front landing redirect script-->
+
+
+<script type="text/javascript">
+            if ((location.href == "http://alecmcclure.com/" )
+                || (location.href == "http://www.alecmcclure.com" )
+                || (location.href == "http://www.alecmcclure.com/" )
+                || (location.href == "http:/alecmcclure.com/#" )
+                || (location.href ==  "http://alecmcclure.com")){
+                    
+                    window.location.href = "http://alecmcclure.com/portfolio";
+                    
+                  $(document).ready(function(){
+                    
+                        //prevent from seeing posts if redirection disallowed
+                         var content = document.getElementById("allPosts");
+                         if (content.style.display != "none"){
+                            content.style.display = "none";
+                        }
+                    });
+            } 
+   
+</script>
 
 <!-- Isotope  for icon arrangements -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js"></script>
@@ -50,6 +60,9 @@
 <!-- Default Slick Settings -->
 <script>
     $(document).ready(function(){
+        var randoSpeed=3000 + (Math.random() * 300);
+        
+        
       $('.carousel').slick({
                 
             //variableWidth: true,
@@ -61,7 +74,7 @@
           adaptiveHeight: true,
         lazyLoad: 'ondemand',
         autoplay: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: randoSpeed
       });
     });
 </script>    
@@ -190,7 +203,7 @@
 	{block:IndexPage}
 	<div class="topbarZ">
 		<p class="profileAlec"><a href="http://alecmcclure.com">
-		<img src="https://farm1.staticflickr.com/372/18608184319_ed92aa9ede_o.png" class="title"></p></a>
+		<img src="https://farm4.staticflickr.com/3678/19851142411_ecfec5a3d4_o.png" class="title"></p></a>
 	</div><br>
 	
 	
@@ -198,7 +211,7 @@
 	{block:Permalink}
 	<div class="topbarZ">
 		<p class="profileAlec"><a href="http://alecmcclure.com">
-		<img src="https://farm1.staticflickr.com/372/18608184319_ed92aa9ede_o.png" class="title"></p></a>
+		<img src="https://farm4.staticflickr.com/3678/19851142411_ecfec5a3d4_o.png" class="title"></p></a>
 	</div><br>
 	{/block:Permalink}
 
@@ -406,7 +419,7 @@
         <br>
         <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
         <br><br>
-        <span>Website Design and Development by Alec McClure</span>
+        <span>Web Design and Development by Alec McClure</span>
         </div>
         <div class="centered">
     	   
