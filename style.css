@@ -1277,6 +1277,7 @@ iframe#tumblr_controls {right:2px !important; position: fixed !important}
 .leftTP{
  padding:3% 0;
  margin: 3%;
+ margin-left:5%;
  /* height: 80%; */
  /* float: left; */
  /* width: 35%; */
@@ -1631,5 +1632,5 @@ button.btn.button.is-checked {
 
 .leftTP p {
     font-size: 1.1em;
-    line-height: 1.5em;
+    line-height: 2em;
 }
