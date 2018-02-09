@@ -14,7 +14,7 @@
 
 <!-- Custom CSS -->
 
-<link rel="stylesheet" type="text/css"  href="http://static.tumblr.com/xbtl0w0/RCxnrrpmu/style.css">
+<link rel="stylesheet" type="text/css"  href="http://static.tumblr.com/xbtl0w0/K0qonx6dp/style.css">
 
 
 <!--    jQuery  -->
@@ -31,17 +31,21 @@
                 || (location.href == "http://www.alecmcclure.com/" )
                 || (location.href == "http:/alecmcclure.com/#" )
                 || (location.href ==  "http://alecmcclure.com")){
+                     $(document).ready(function(){
+                     var content = document.getElementById("allPosts");
+                         if (content.style.display != "none"){
+                            content.style.display = "none";
+                            content.style.visibility = "hidden";
+                        }
+                     });
                     
                     window.location.href = "http://alecmcclure.com/portfolio";
                     
-                  $(document).ready(function(){
+                 // $(document).ready(function(){
                     
                         //prevent from seeing posts if redirection disallowed
-                         var content = document.getElementById("allPosts");
-                         if (content.style.display != "none"){
-                            content.style.display = "none";
-                        }
-                    });
+
+                  //  });
             } 
    
 </script>
@@ -60,7 +64,7 @@
 <!-- Default Slick Settings -->
 <script>
     $(document).ready(function(){
-        var randoSpeed=3000 + (Math.random() * 300);
+        var randoSpeed=3000 + (Math.random() * 800);
         
         
       $('.carousel').slick({
@@ -77,12 +81,9 @@
         autoplaySpeed: randoSpeed
       });
     });
+    
 </script>    
     <style>
-        
-        .slick-slide{
-            width:250px;   
-        }
     </style>
 
 
@@ -126,7 +127,7 @@
 
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500, 600' rel='stylesheet' type='text/css'> 
 
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cutive+Mono:400,400italic,700normal,700italic"/>
+<!--<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cutive+Mono:400,400italic,700normal,700italic"/>-->
 
 </head>
 
@@ -188,13 +189,14 @@
 		</div>
 			
 			
-			<div class="sociallinks">
-				<a href="https://github.com/sabotai"><img src="https://farm1.staticflickr.com/377/18607389738_491f8a75cd_o.png" width=35></a>
-				<a href="https://www.tumblr.com/follow/alecmcclure"><img src="https://farm1.staticflickr.com/423/18608986019_76b0fae673_o.png" width=35></a>
-				<a href="http://www.twitter.com/SubjectiveIdeal"><img src="https://farm1.staticflickr.com/552/18790161272_83613530c1_o.png" width=35></a>
-				<a href="http://www.flickr.com/sabotai"><img src="https://farm1.staticflickr.com/296/18607389818_7f9acf381c_o.png" width=35></a>
+			<div class="sociallinks grow">
+				<a href="https://github.com/sabotai"><img alt="Github" src="https://farm1.staticflickr.com/377/18607389738_491f8a75cd_o.png" width=35></a>
+				<a href="https://www.tumblr.com/follow/alec-mcclure"><img alt ="Follow my work on tumblr." src="https://farm1.staticflickr.com/423/18608986019_76b0fae673_o.png" width=35></a>
+				<a href="http://www.twitter.com/SubjectiveIdeal"><img alt="Twitter" src="https://farm1.staticflickr.com/552/18790161272_83613530c1_o.png" width=35></a>
+				<!--<a href="http://www.flickr.com/sabotai"><img src="https://farm1.staticflickr.com/296/18607389818_7f9acf381c_o.png" alt="Flickr" width=35></a>-->
+								<a href="http://www.instagram.com/alec.depop"><img src="sabotai.github.io/website/ig_icon.png" alt="Instagram" width=35></a>
 				
-				<a href="https://vimeo.com/alecmcclure"><img src="https://farm1.staticflickr.com/401/18768861276_7fbd98ca7d_o.png" width=35></a>
+				<a href="https://vimeo.com/alecmcclure"><img alt="Vimeo" src="https://farm1.staticflickr.com/401/18768861276_7fbd98ca7d_o.png" width=35></a>
 				    
 			</div>
     </div>
@@ -254,7 +256,7 @@
                     <div id="videoCaption"  class = "caption captionVideo">
                             {Caption}
                 
-    {block:More} <a href="{Permalink}" class="button">{lang:Read more}</a> {/block:More}
+    {block:More} <a href="{Permalink}" class="button">See More</a> {/block:More}
                     
                 </div>{/block:Caption}
                   
@@ -294,7 +296,7 @@
         
             {block:Caption}
                 <div id = "photoCaption" class='captionVideo'>{Caption}                
-    {block:More} <a href="{Permalink}" class="button">{lang:Read more}</a> {/block:More}
+    {block:More} <a href="{Permalink}" class="button">See More</a> {/block:More}
                     
                 </div>
                   
@@ -310,7 +312,7 @@
         
             {block:Caption}
                 <div id = "photoCaption" class='captionVideo'>{Caption}                
-    {block:More} <a href="{Permalink}" class="button">{lang:Read more}</a> {/block:More}
+    {block:More} <a href="{Permalink}" class="button">See More</a> {/block:More}
                     
                 </div>
                   
