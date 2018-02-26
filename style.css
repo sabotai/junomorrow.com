@@ -7,7 +7,8 @@ html {
 body {
     font-family: "Ubuntu", Ubuntu, sans-serif;
     background-color:black;
-	background-image:url('https://farm1.staticflickr.com/323/18485570101_2d01e50e5e_o.png');
+	
+	background-image:url('http://sabotai.github.io/website/bg-dark.png');
 	background-repeat:repeat;
 }
 
@@ -849,8 +850,8 @@ iframe#tumblr_controls {right:2px !important; position: fixed !important}
 	/* min-width: 50%; */
 }
 .icon{
-    margin: 1%;
-    width: 31%;
+    margin: 1.5%;
+    /*width: 30%;*/
     /* width: 300px; */
 	
     /* height: 300px; */
@@ -873,8 +874,7 @@ iframe#tumblr_controls {right:2px !important; position: fixed !important}
 
 .overflow-hidden {
     display:inline-block;
-	
-    background-image:url('https://farm1.staticflickr.com/462/18483771855_87da76b4b4_o.png');
+	    background-image:url('http://sabotai.github.io/website/bg.png');
     /* width:300px; */
 	
     /* background-color: black; */
@@ -925,7 +925,7 @@ iframe#tumblr_controls {right:2px !important; position: fixed !important}
   position:relative;
   z-index:999;
   background-color: #424242;
-	background-image:url('https://farm1.staticflickr.com/511/18261642089_c23309197e_o.png');
+  background-image:url('http://sabotai.github.io/website/bg-dark.png');
   height:50px;
   opacity:0.8;
     
@@ -943,7 +943,7 @@ iframe#tumblr_controls {right:2px !important; position: fixed !important}
   margin-top: -90px;
   padding-top:15px;
   margin-left:20px;
-	background-image:url('https://farm1.staticflickr.com/511/18261642089_c23309197e_o.png');
+  background-image:url('http://sabotai.github.io/website/bg-dark.png');
 }
 
 
@@ -1523,7 +1523,7 @@ a:visited {
 .postcontent {
     position: relative;
     /* left: 18%; */
-    top: 10px;
+    top: 25px;
     /* width: 81%; */
     /* min-width: 1050px; */
     /* max-width: 1384px; */
