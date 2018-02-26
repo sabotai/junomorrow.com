@@ -642,7 +642,7 @@ font-weight: normal;     font-style: normal;
 }
  @font-face {
     font-family: 'Bebas Neue';
-    src: url('sabotai.github.io/website/BebasNeue.otf') format('opentype');
+    src: url('http://sabotai.github.io/website/BebasNeue.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 
@@ -1029,11 +1029,11 @@ iframe#tumblr_controls {right:2px !important; position: fixed !important}
 .sidebar {
      position: fixed;
     
-     width: 13%;
+     /*width: 13%;*/
     
      max-width: 200px;
      min-width: 140px;
-     text-align: center;
+     /*text-align: center;*/
     font-size: 12px;
 	padding-top:65px;
 }
@@ -1044,17 +1044,17 @@ iframe#tumblr_controls {right:2px !important; position: fixed !important}
 }
 
 .sidecontent img{
-	transform:rotateY(0deg);
-	transition:all 12s ease-in;
+	/*transform:rotateY(0deg);*/
+	/*transition:all 12s ease-in;*/
 	
 }
 
 .sidecontent img:hover{
-	transform:rotateY(360deg);
+	/*transform:rotateY(360deg);*/
 }
 
 .sidetitle {
-	margin-top:30px;
+	/*margin-top:30px;*/
 }
 
 .sideButton {
