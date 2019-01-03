@@ -14,7 +14,7 @@
 
 <!-- Custom CSS -->
 
-<link rel="stylesheet" type="text/css"  href="https://static.tumblr.com/xbtl0w0/Dcnpk5yd9/style.css">
+<link rel="stylesheet" type="text/css"  href="https://static.tumblr.com/xbtl0w0/05Bpkrrr0/style.css">
 
  
 <!--    jQuery  -->
@@ -50,9 +50,31 @@
    
 </script>
 
+<!-- attempt to fix image load issue -->
+
+<script type="text/javascript">
+// external js: isotope.pkgd.js, imagesloaded.pkgd.js
+
+// init Isotope
+var $grid = $('.js-isotope').isotope({
+  itemSelector: '.element-item',
+  percentPosition: true,
+  masonry: {
+    columnWidth: '.grid-sizer'
+  }
+});
+// layout Isotope after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.isotope('layout');
+});  
+
+</script>
+
 <!-- Isotope  for icon arrangements -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js"></script>
-<script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.min.js"></script>
+<!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js"></script>-->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<!--<script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.min.js"></script>-->
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
 <!-- Slick Image Carousel CSS and JS -->
 <!-- (source modified a bit) -->
