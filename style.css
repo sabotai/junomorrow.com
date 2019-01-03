@@ -867,8 +867,8 @@ iframe#tumblr_controls {right:2px !important; position: fixed !important}
 	min-height:1px; 
 	} 
 .icon{ 
-	min-width:1px; 
-	min-height:1px; 
+	min-width:150px; 
+	min-height:150px; 
 }
 
 
@@ -879,8 +879,9 @@ iframe#tumblr_controls {right:2px !important; position: fixed !important}
 	
     /* background-color: black; */
     /*width: 100%;*/
-    /* background-repeat: repeat; */
+    background-repeat: no-repeat;
     background-clip: content-box;
+    background-size: contain;
     /* height: 80%; */
 }
 .overflow-hidden img{
